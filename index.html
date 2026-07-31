@@ -753,7 +753,7 @@ function beginEndHold(){
   endHoldTimer = setTimeout(() => {
     cancelEndHold();
     endRace();
-  }, 1000);
+  }, 5000);
 }
 
 function cancelEndHold(){
@@ -792,7 +792,7 @@ function exportTXT(){
   link.click();
   link.remove();
 
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
 }
 
 function restoreRaceState(){
